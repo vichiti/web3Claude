@@ -97,7 +97,7 @@ const CONTRACT_ABI = [
 	}
 ]
 
-const contractAddress = ref('')
+const contractAddress = ref('0x377617db1D07514359675a0720A5Fc7895c1c6bB')
 const valueToSet = ref(null)
 const retrievedValue = ref(null)
 const transactionHash = ref(null)
