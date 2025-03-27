@@ -1,3 +1,4 @@
+<!-- src/App.vue -->
 <template>
   <v-app>
     <v-app-bar color="primary" app>
@@ -50,7 +51,10 @@ const drawer = ref(false)
 const menuItems = [
   { title: 'Home', path: '/' },
   { title: 'Profile', path: '/profile' },
-  { title: 'Dashboard', path: '/dashboard' }
+  { title: 'Dashboard', path: '/dashboard' },
+  // New menu items
+  { title: 'Contract Interaction', path: '/contract-interaction' },
+  { title: 'Token Creation', path: '/token-creation' }
 ]
 
 const logout = async () => {

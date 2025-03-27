@@ -1,9 +1,13 @@
+// src/router.js
 import { createRouter, createWebHistory } from 'vue-router'
 import { useWeb3Store } from '@/stores/web3Store'
 
 import HomePage from '@/pages/HomePage.vue'
 import ProfilePage from '@/pages/ProfilePage.vue'
 import DashboardPage from '@/pages/DashboardPage.vue'
+// New imports
+import ContractInteractionPage from '@/pages/ContractInteractionPage.vue'
+import TokenCreationPage from '@/pages/TokenCreationPage.vue'
 
 const routes = [
   { 
@@ -19,6 +23,17 @@ const routes = [
   { 
     path: '/dashboard', 
     component: DashboardPage,
+    meta: { requiresAuth: true }
+  },
+  // New routes
+  { 
+    path: '/contract-interaction', 
+    component: ContractInteractionPage,
+    meta: { requiresAuth: true }
+  },
+  { 
+    path: '/token-creation', 
+    component: TokenCreationPage,
     meta: { requiresAuth: true }
   }
 ]
